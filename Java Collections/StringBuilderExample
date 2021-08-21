@@ -1,0 +1,36 @@
+package Java Collections;
+
+public class StringBuilderExample {
+    // create a StringBuilder object
+// usind StringBuilder() constructor
+StringBuilder str = new StringBuilder();
+str.append("GFG");
+
+// create a StringBuilder object
+// usind StringBuilder(CharSequence) constructor
+StringBuilder str1 = new StringBuilder("AAAABBBCCCC");
+
+// create a StringBuilder object
+// usind StringBuilder(capacity) constructor
+StringBuilder str2 = new StringBuilder(10);
+
+
+
+str2.capacity();
+str.toString();
+
+StringBuilder append(X x): This method appends the string representation of the X type argument to the sequence.
+char charAt(int index): This method returns the char value in this sequence at the specified index.
+
+StringBuilder delete(int start, int end): This method removes the characters in a substring of this sequence.
+StringBuilder deleteCharAt(int index): This method removes the char at the specified position in this sequence.
+
+int length(): This method returns the length (character count)
+StringBuilder replace(int start, int end, String str): This method replaces the characters in a substring of this sequence with characters in the specified String.
+StringBuilder reverse(): This method causes this character sequence to be replaced by the reverse of the sequence.
+
+void setCharAt(int index, char ch): In this method, the character at the specified index is set to ch.
+void setLength(int newLength): This method sets the length of the character sequence.
+CharSequence subSequence(int start, int end): This method returns a new character sequence that is a subsequence of this sequence.
+String toString(): This method returns a string representing the data in this sequence.
+}

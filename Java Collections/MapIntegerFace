@@ -1,0 +1,48 @@
+package Java Collections;
+
+public class MapIntegerFace {
+    //===================================== Map Interface =============================
+				// #########  HashMap #######//
+	Map<String, Integer> hm = new HashMap<String, Integer>(); //insertion order not maintain
+	Map<String, Integer> map = new LinkedHashMap<>();  //insertion order maintain
+	HashMap<String, Integer> map1 = new HashMap<>();
+	LinkedHashMap<String, String> lhm = new LinkedHashMap<String, String>();
+ 
+	
+	hm.put(key,value); // if contains than change it
+	hm.get(key);
+	hm.remove(key);
+	hm.containsKey(key);
+	hm.containsValue(value);
+	
+	for (String key : hm.keySet()){}
+	for (String value : hm.values()){}
+	hm.size();
+	hm.clear();
+	
+	hm.getOrDefault(key,defaultValue);	//Returns the value to which the specified key is mapped, or defaultValue if this map contains no mapping for the key.
+	hm.putIfAbsent(key,value);	//If the specified key is not already associated with a value (or is mapped to null) associates it with the given value and returns null, else returns the current value.
+
+	
+	// #########  TreeMap  #########//
+	Map<String, Integer> tmap = new TreeMap<>();
+	TreeMap<String, Integer> tree_map = new TreeMap<>();
+	
+	//same as hashmap
+	
+	tmap.ceilingKey(key); //It returns the least key, greater than or equal to the given key the specified key or null if there is no such key.
+	tmap.floorKey(key);   //It returns the greatest key, less than or equal to the given key the specified key or null if there is no such key.
+	tmap.lowerKey(key);	//return the highest key which is lower than this key
+	tmap.higherKey();    //return the lowest key which is higher than this key
+	
+	tmap.firstKey();		//Returns the first (lowest) key currently in this sorted map.
+	tmap.lastKey();			//Returns the last (highest) key currently in this sorted map.
+	
+	tmap.subMap(fromKey,toKey); //Returns a view of the portion of this map whose keys range from fromKey, inclusive, to toKey, exclusive.
+	tmap.headMap(tokey); 		//Returns a view of the portion of this map whose keys are strictly less than toKey.
+	tmap.tailMap(fromKey); //Returns a view of the portion of this map whose keys are greater than or equal to fromKey.
+	
+	tmap.pollFirstEntry();	//This method retrieves and removes the first (lowest) key-value pair
+	tmap.pollLastEntry();	//This method retrieves and removes the last (highest) key-value pair
+	
+}

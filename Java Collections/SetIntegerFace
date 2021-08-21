@@ -1,0 +1,42 @@
+package Java Collections;
+
+public class SetIntegerFace {
+    //===================================== Set Interface =============================
+				// #########  HashSet  #########//
+	HashSet<String> set = new HashSet<String>(); //insertion order not maintain
+	//Set<String> set = new HashSet<String>();
+	//HashSet<ArrayList> set = new HashSet<>();
+	
+	
+				// #########  LinkedHashSet  #########//
+	LinkedHashSet<String> linkedset = new LinkedHashSet<String>(); //insertion order maintain
+	
+	set.add();
+	set.remove(element);
+	set.contains(element);
+	for (String value : set){}
+	set.size();
+	set.clear();
+	set.isEmpty();
+	
+	// #########  TreeSet  #########//
+	Treeset<Integer> tset = new TreeSet<Integer>();
+	
+	//same as hashset
+	tset.ceiling(element);	//This method returns the least element in this set greater than or equal to the given element, or null if there is no such element
+	tset.floor(element);	//This method returns the greatest element in this set less than or equal to the given element, or null if there is no such element.
+	tset.higher(element);	//This method returns the least element in this set strictly greater than the given element, or null if there is no such element
+	tset.lower(element);	//This method returns the greatest element in this set strictly less than the given element, or null if there is no such element
+	
+	tset.pollFirst();	//This method retrieves and removes the first (lowest) element, or returns null if this set is empty.
+	tset.pollLast();	//This method retrieves and removes the last (highest) element, or returns null if this set is empty
+	tset.first();	//This method will return the first element in TreeSet if TreeSet is not null else it will throw NoSuchElementException.
+	tset.last();	//This method will return the last element in TreeSet if TreeSet is not null else it will throw NoSuchElementException.
+	
+	tset.subSet(Object fromElement, Object toElement);	//This method will return elements ranging from fromElement to toElement. fromElement is inclusive and toElement is exclusive.
+	tset.tailSet(Object fromElement);	//This method will return elements of TreeSet which are greater than or equal to the specified element
+	tset.headSet(Object toElement);	//This method will return elements of TreeSet which are less than the specified element.
+	
+	tset.descendingSet();	//This method returns a reverse order view of the elements contained in this set.
+	
+}

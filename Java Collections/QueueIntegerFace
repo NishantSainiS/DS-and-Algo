@@ -1,0 +1,52 @@
+package Java Collections;
+
+public class QueueIntegerFace {
+    //===================================== Queue Interface =============================
+
+    // #########  Initializing an deque (double ended queue  #########//
+    Deque<Integer> dq = new ArrayDeque<Integer>(10);
+	//Deque<String> deque = new LinkedList<String>();
+		
+	dq.push(); 		//This method is used to add an element at the head of the queue.
+	dq.add(); 		//The method inserts a particular element at the end of the deque.
+	dq.addFirst();  // The method inserts particular element at the start of the deque.
+	dq.addLast();   //The method inserts a particular element at the end of the deque. It is similar to the add() method
+	dq.offer();     //The method inserts element at the end of deque.
+	dq.offerFirst();  //The method inserts element at the front of deque.
+	dq.offerLast();  //The method inserts element at the end of deque.
+	
+	dq.getFirst();  //The method returns first element of the deque
+	dq.getLast();   //The method returns last element of the deque
+	dq.peek();      //The method returns head element without removing it.
+	dq.peekFirst();  //Retrieves, but does not remove, the first element of this deque, or returns null if this deque is empty.
+	dq.peekLast();   //Retrieves, but does not remove, the last element of this deque, or returns null if this deque is empty.
+	
+	dq.remove();   		//The method returns head element and also removes it
+	dq.removeFirst();	//The method returns the first element and also removes it
+	dq.removeLast();	//The method returns the last element and also removes it
+	dq.poll();         //The method returns head element and also removes it
+	dq.pollFirst();    //Retrieves and removes the first element of this deque, or returns null if this deque is empty.
+	dq.pollLast();		//Retrieves and removes the last element of this deque, or returns null if this deque is empty.
+	dq.pop();			//The method pops out an element for stack represented by deque
+	
+	dq.clear(); 	// The method removes all deque elements
+	dq.isEmpty()	The method checks whether the deque is empty or not
+	dq.size();
+	
+	
+	// #########  Initializing an PriorityQueue  #########//
+	PriorityQueue<Integer> pq = new PriorityQueue<Integer>();
+	//PriorityQueue<String> pq = new PriorityQueue<>();
+	// Queue<Integer> pQueue = new PriorityQueue<Integer>();
+	
+	pq.add();	//Inserts the specified element into this priority queue.
+	pq.peek();	//Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
+	pq.poll();	//Retrieves and removes the head of this queue, or returns null if this queue is empty.
+	pq.size();
+	pq,isEmpty();
+	pq.clear();
+	pq.offer(); //same as add()
+	
+	pq.remove();  //Retrieves and removes the head of this queue.
+	
+}

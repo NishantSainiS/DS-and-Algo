@@ -1,0 +1,67 @@
+//====================== List Integer Face ===========================
+             //###### ArrayList ######//
+	List<Integer> list = new ArrayList<>();
+	//ArrayList<Integer> list = new ArrayList<>();
+	//ArrayList<Integer> list = new ArrayList<>(size);
+	
+	list.add(element);  //This method is used to add an element at the end of the List.
+	list.add(index,element); //This method is used to add an element at a specific index in the List.
+	list.set(index,element); //this method takes an index and the updated element which needs to be inserted at that index. 
+	list.get(index);
+	list.remove(element); // simply remove an object from the List. If there are multiple such objects, then the first occurrence of the object is removed.
+	list.remove(index);  //simply removes the element present at that specific index in the List. After removing the element, all the elements are moved to the left to fill the space and the indices of the objects are updated.
+	list.size();
+	list.clear();      //This method is used to remove all the elements in the list. However, the reference of the list created is still stored.
+	Collections.sort(list,Comparator comp) // This method is used to sort the elements of the list on the basis of the given
+	System.out.println(list); // Displaying the list
+	for(int val : list){}
+	
+				//##### Vector #####//
+	List<Integer> v = new Vector<Integer>(n);
+	//Vector<Integer> v  = new Vector<>();
+	//Vector<Integer> v  = new Vector<>(size);
+	
+	//same as ArrayList
+	v.firstElement();	//Returns the first component (the item at index 0) of this vector.
+	v.lastElement();    //	Returns the last component of the vector
+	System.out.println(v); // Displaying the list
+	for(int val : v){}
+	
+            	//##### Stack #####//
+	//List<Integer> st = new Stack<Integer>();
+	Stack<E> st = new Stack<>();
+	
+	//same as Vector
+	st.push(element);		// push element on the top
+	st.pop();  				// top remove
+	st.peek();				// top get but not delete
+	st.size();
+	st.isEmpty();
+	st.clear();
+	System.out.println(st);  // Displaying the Stack
+	for(int val : st){}
+	
+	        	//##### LinkedList #####//
+	LinkedList<E> ll = new LinkedList<>();
+	
+	//same as arraylist
+	ll.addFirst(); // This method Inserts the specified element at the beginning of this list.
+    ll.offerFirst();
+	ll.addLast();	// This method Appends the specified element to the end of this list
+	ll/offerLast();
+	
+	ll.getFirst();  //This method returns the first element in this list.
+	ll.getLast();     //This method returns the last element in this list.
+	
+	ll.removeFirst(); //This method removes and returns the first element from this list.
+	ll.removeLast();  //This method removes and returns the last element from this list.
+	ll.pollFirst();	//This method retrieves and removes the first element of this list, or returns null if this list is empty.
+    ll.pollLast();	//This method retrieves and removes the last element of this list, or returns null if this list is empty
+	
+	ll.peekFirst();	//This method retrieves, but does not remove, the first element of this list, or returns null if this list is empty.
+    ll.peekLast();	//This method retrieves, but does not remove, the last element of this list, or returns null if this list is empty.
+	System.out.println(ll);  // Displaying the Stack
+	for(int val : ll){}
+        
+	
+			
