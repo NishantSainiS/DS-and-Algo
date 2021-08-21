@@ -1,3 +1,4 @@
+package AdvDataStructure;
 class TrieForBit {
     class TrieNode{
         TrieNode[] trie = new TrieNode[2];

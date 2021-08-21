@@ -1,5 +1,6 @@
+package AdvDataStructure;
 import java.util.*;
-class DisjointUnionSet {
+class DSU {
 
     static int[] parent = new int[100001];
     static int[] rank = new int[100001];
