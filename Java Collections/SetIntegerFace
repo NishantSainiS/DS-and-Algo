@@ -21,6 +21,8 @@ public class SetIntegerFace {
 	
 	// #########  TreeSet  #########//
 	Treeset<Integer> tset = new TreeSet<Integer>();
+	//for object or reverse order
+	Treeset<Integer> tset = new TreeSet<Integer>((a,b)-> b.val - a.val);
 	
 	//same as hashset
 	tset.ceiling(element);	//This method returns the least element in this set greater than or equal to the given element, or null if there is no such element

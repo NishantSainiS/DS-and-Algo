@@ -2,7 +2,7 @@ package graph;
 
 import java.util.*; 
 
-class Node 
+class BellmanFord
 {
 	private int u;
     private int v;

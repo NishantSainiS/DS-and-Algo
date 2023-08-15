@@ -1,4 +1,4 @@
-package JAVACODE;
+
 
 class GFG
 {

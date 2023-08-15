@@ -1,5 +1,5 @@
 import java.util.*;
-import java.lang.*;
+//import java.lang.*;
 import java.io.*;
 public class MyAnswer {
      static class FastScanner{ //10^5 -- .15 sec && 4*10^6 ---> .86 sec

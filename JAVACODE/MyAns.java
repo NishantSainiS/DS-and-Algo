@@ -1,4 +1,4 @@
-package JAVACODE;
+
 
 import java.util.*;
 //import java.lang.*;
@@ -78,50 +78,7 @@ public class MyAns {
      
           int t = scan.nextInt();
           while (t-- > 0){
-               int n = scan.nextInt();
-               int q = scan.nextInt();
-               ArrayList<Integer>[] adj = new ArrayList[n+1];
-               for(int i = 0;i<=n;i++){
-                    adj[i] = new ArrayList<>();
-               }
-               for(int i =1;i<n;i++){
-                    int u = scan.nextInt();
-                    int v = scan.nextInt();
-                    adj[u].add(v);
-                    adj[v].add(u);
-               }
-               oddleaf = 0;
-               ArrayList<Integer> levels = solve(adj,n);
-               
-               int black = 0,white=0;
-               int cost = 0,value = 0;
-               boolean odd = true;
-               for(int l : levels){
-                    if(odd){
-                         cost+=l;
-                         black+=l;
-                    }else{
-                         white+=l;
-                    }
-                    odd = odd ? false : true;
-               }
-               // System.out.println(black);
-               // System.out.println(white);
-               // System.out.println(oddleaf);
-               if(q==1){
-                    value = Math.abs(black-white);
-                    black-=oddleaf;
-                    white+=oddleaf;
-                    value = Math.max(value,Math.abs(black-white));
-               }else{
-                    value = Math.abs(black-white);
-               }
-               // System.out.println(black);
-               // System.out.println(white);
-               // System.out.println();
-               sb.append(value);
-               
-               sb.append("\n");
+               //System.out.println(System.getProperty(user.dir)));
                
           }
           out.println(sb);
